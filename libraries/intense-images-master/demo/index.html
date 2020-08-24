@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Intense Images </title>
+        <meta name="description" content="A javascript library for viewing images in a fully full screen.">
+
+        <!-- CSS -->
+        <link href='./css/styles.css' rel='stylesheet'>
+
+        <!-- JS -->
+        <script src='../intense.js'></script>
+
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+    	<section class="demos">
+    		<!-- Using divs for the demo, for formatting... you can use images if you want!  -->
+    		<div class="demo-image first" data-image="./img/h1_small.jpg" data-title="Beautiful fields" data-caption="With lots of wheaty puffs. Love those puffs."></div>
+    		<div class="demo-image second" data-image="./img/v1_small.jpg" data-title="Fantastic cliffs" data-caption="Longing for exploration. Explore me!"></div>
+    		<div class="demo-image third"  data-image="./img/h2_small.jpg" data-title="Chilling sheep" data-caption="To your breed, your fleece, your clan be true!"></div>
+    	</section>
+
+
+
+		<script>
+			var elements = document.querySelectorAll( '.demo-image' );
+			Intense( elements );
+		</script>
+
+		<!-- Tweet Button -->
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </body>
+</html>
